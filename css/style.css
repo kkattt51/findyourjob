@@ -1,8 +1,14 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body{
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   color: #111238;
   margin: 0;
+}
+.header{
+  background: #f2f3f6;
 }
 .menu {
   list-style: none;
@@ -12,13 +18,15 @@ body{
 .menu-item:not(:last-child) {
   margin-right: 20px;
 }
-.menu-link{
+.menu-link {
   color: #111238;
   text-decoration: none;
 }
-.button{
+.button {
   text-decoration: none;
   display: inline-block;
+  border: none;
+  font-size: 16px;
 }
 .button-link {
   color: #111238;
@@ -33,4 +41,83 @@ body{
   padding-bottom: 15px;
   padding-left: 30px;
   color: #fff;
+}
+.button-icon{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.button-text{
+  vertical-align: middle;
+}
+.hero-title{
+  font-size: 44px; 
+  line-height: 53px;
+  margin-bottom: 15px;
+  margin-top: 43px;
+}
+.hero-text{
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+.input-group{
+  background-color: #fff;
+  border: 1px solid rgba(209, 209, 209, 0.1);
+  box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.input{
+  background-color: #fff;
+  border: none;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 15px;
+}
+.input-focus{
+  outline: 1px dotted #666;
+}
+.tags-group{
+  padding-left: 15px;
+  color: #b2b2b2;
+  font-size: 14px;
+  line-height: 17px;
+}
+.tag{
+  color: #b2b2b2;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+.section-title{
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+.section{
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.card{
+  text-decoration: none;
+  color: #111238;
+  background: #f2f3f6;
+  border-radius: 10px;
+  padding: 35px;
+  transition: background-color 0.2s;
+}
+.card:hover{
+  background-color: #1a75e8;
+  color: #fff;
+}
+card:hover.card-icon{
+  fill: #fff;
+}
+.card-icon{
+  fill: #111238;
+  margin-bottom: 15px;
+  transition: fill 0.2s;
 }
